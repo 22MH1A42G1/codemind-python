@@ -1,7 +1,10 @@
 n=int(input())
 for i in range(n):
-    for j in range(1,n-2):
-        print(j,end="")
-    for j in range(n-2,0,-1):
-        print(j,end="")
-    print()    
+    for j in range(n-i-1):
+        print(" ", end="")
+    if i == 0 or i == n-1:
+        print("*" * n)
+    else:
+        print("*", end="")
+        print(" " * (n-2), end="")
+        print("*")
