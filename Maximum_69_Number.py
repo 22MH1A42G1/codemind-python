@@ -1,4 +1,7 @@
-def max_69(self, num: int) -> int:
-    return str(num).replace('6','9',1)
-n=input()
-print(max_69(1,n))
+num=list(str(int(input())))
+for i in range(len(num)):
+    if num[i]=="6":
+        num[i]="9"
+        break
+num = "".join(num)
+print(num)
