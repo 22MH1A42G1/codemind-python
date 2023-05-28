@@ -1,10 +1,10 @@
 n=int(input())
-for i in range(n):
-    for j in range(n-i-1):
-        print(" ", end="")
-    if i == 0 or i == n-1:
-        print("*" * n)
-    else:
-        print("*", end="")
-        print(" " * (n-2), end="")
-        print("*")
+for i in range(1,n+1):
+    for j in range(n,i,-1):
+        print(' ',end='')
+    for k in range(i-1,0,-1):
+        print(k,end='')
+    print('0',end='')
+    for l in range(1,i):
+        print(l,end='')
+    print('')
